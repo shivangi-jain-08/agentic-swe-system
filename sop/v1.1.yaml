@@ -1,0 +1,16 @@
+version: "1.1.0"
+agent_order: [developer, reviewer, qa]
+model_assignments:
+  developer: deepseek-coder:6.7b
+  reviewer: deepseek-coder:6.7b
+  tech_lead: qwen2.5-coder:7b
+  product_analyst: qwen2.5-coder:7b
+retry_limits:
+  developer: 2
+  loop: 2
+stop_conditions:
+  max_subtasks: 5
+  qa_pass_threshold: 0.8
+feature_flags:
+  use_product_analyst: true
+  use_tech_lead: true

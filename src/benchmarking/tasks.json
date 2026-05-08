@@ -1,0 +1,37 @@
+[
+  {
+    "id": "T1",
+    "type": "bug_fix",
+    "description": "Fix a known bug in an existing function (inject one first).",
+    "acceptance_criteria": ["All tests pass", "Change is minimal and targeted"],
+    "notes": "Fill in target repo + file once you pick your benchmark suite."
+  },
+  {
+    "id": "T2",
+    "type": "feature_add",
+    "description": "Add input validation to a function with no existing validation.",
+    "acceptance_criteria": ["All tests pass", "Invalid inputs return a clear error"],
+    "notes": "Fill in once repo is selected."
+  },
+  {
+    "id": "T3",
+    "type": "refactor",
+    "description": "Extract a long function into smaller sub-functions.",
+    "acceptance_criteria": ["All tests pass", "Cyclomatic complexity decreases"],
+    "notes": "Fill in once repo is selected."
+  },
+  {
+    "id": "T4",
+    "type": "test_coverage",
+    "description": "Write pytest tests for a module with low coverage.",
+    "acceptance_criteria": ["All tests pass", "Coverage increases"],
+    "notes": "Fill in once repo is selected."
+  },
+  {
+    "id": "T5",
+    "type": "docstring_coverage",
+    "description": "Add docstrings to undocumented public functions.",
+    "acceptance_criteria": ["All tests pass", "Docstrings follow a consistent style"],
+    "notes": "Fill in once repo is selected."
+  }
+]
